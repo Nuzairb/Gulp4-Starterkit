@@ -94,7 +94,7 @@ gulp.task("style", function(cb) {
         .pipe(gulp.dest("build/css"))
         .pipe(rename(function(path) {
             path.basename += ".min";
-            path.extname = ".css"
+            path.extname = ".css";
         }))
         .pipe(minify())
         .pipe(gulp.dest("build/css"))
