@@ -12,16 +12,6 @@ var webp = require("gulp-webp");
 var del = require("del");
 var server = require('browser-sync').create();
 
-// path: {
-//     tasks: require('./gulp/config/tasks.js')
-// }
-
-// let modulesArray = path.tasks;
-
-// modulesArray.forEach(function(taskPath) {
-//     require(taskPath)();
-// });
-
 gulp.task("delete", function() {
     return del("build");
 });
